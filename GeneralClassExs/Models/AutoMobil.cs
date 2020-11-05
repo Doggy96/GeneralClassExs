@@ -37,6 +37,8 @@ namespace GeneralClassExs.Models
 		}
 
 		abstract public void SteerLeft();
+		//abstract public void SteerRight();
+		//abstract public void Steer(bool steerLeft);
 		//{
 		//	Console.WriteLine("The car is steering left");
 		//}
