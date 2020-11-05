@@ -8,9 +8,11 @@ namespace GeneralClassExs.Interfaces
 {
 	interface IAytomobileActions
 	{
-		void SteerLeft();
-		void SteerRight();
+		void SteerLeft(bool turnL);
+		void SteerRight(bool turnR );
 		void Steer();
 		
+
+
 	}
 }

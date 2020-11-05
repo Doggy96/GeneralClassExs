@@ -21,7 +21,7 @@ namespace GeneralClassExs.Models
 
 
 
-		public void SteerLeft()
+		public void SteerLeft(bool turnL )
 		{
 			Console.WriteLine("The car is steering left");
 		}
@@ -36,7 +36,7 @@ namespace GeneralClassExs.Models
 			Console.WriteLine("The car is reversing");
 		}
 
-		public void SteerRight()
+		public void SteerRight(bool turnR)
 		{
 			Console.WriteLine("The car is turning right");
 		}

@@ -18,7 +18,7 @@ namespace GeneralClassExs.Models
 			this.IsOn = IsOn;
 		}
 
-		public void SteerLeft()
+		public void SteerLeft(bool turnL)
 		{
 			Console.WriteLine("The boat is turning left");
 
@@ -30,7 +30,7 @@ namespace GeneralClassExs.Models
 
 		}
 
-		public void SteerRight()
+		public void SteerRight(bool turnR)
 		{
 			Console.WriteLine("The boat is turning right");
 

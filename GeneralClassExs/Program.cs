@@ -16,31 +16,30 @@ namespace GeneralClassExs
 			Boat boat = new Boat();
 
 			car.Steer();
-			car.SteerLeft();
-			car.SteerRight();
+			
+			car.SteerLeft(false);
+			car.SteerRight(false);
 			car.Reverse();
 
 			motor.Steer();
-			motor.SteerLeft();
-			motor.SteerRight();
+			motor.SteerLeft(true);
+			motor.SteerRight(false);
 
 			boat.Steer();
-			boat.SteerLeft();
-			boat.SteerRight();
+			boat.SteerLeft(true);
+			boat.SteerRight(false);
 			boat.Reverse();
 
 		
 
 			motor.Start();
 			Console.WriteLine(motor.IsOn);
-			motor.SteerLeft();
+			motor.SteerLeft(false);
 			motor.Stop();
 			Console.WriteLine(motor.IsOn);
 
 			car.Start();
 			Console.WriteLine(car.IsOn);
-
-			car.SteerLeft();
 
 			car.Stop();
 			Console.WriteLine(car.IsOn);
@@ -48,10 +47,6 @@ namespace GeneralClassExs
 			Console.ReadLine();
 
 		}
-
-
-
-
 	
 	}
 }

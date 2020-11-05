@@ -9,8 +9,8 @@ namespace GeneralClassExs.Interfaces
 {
 	interface ICarActions
 	{
-		void SteerLeft();
-		void SteerRight();
+		void SteerLeft(bool turnL);
+		void SteerRight(bool turnR);
 		void Steer();
 		void Break();
 		void Reverse();

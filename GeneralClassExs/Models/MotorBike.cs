@@ -21,7 +21,7 @@ namespace GeneralClassExs.Models
 			this._isOn = true;
 		}
 
-		public void SteerLeft()
+		public void SteerLeft(bool turnL )
 		{
 			Console.WriteLine("The motorbike is steering left");
 		}
@@ -31,7 +31,7 @@ namespace GeneralClassExs.Models
 			Console.WriteLine("The motorbike is breaking");
 		}
 
-		public void SteerRight()
+		public void SteerRight(bool turnR)
 		{
 			Console.WriteLine("The motorbike is turning right");
 		}
