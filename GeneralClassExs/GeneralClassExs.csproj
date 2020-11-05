@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IBoatActions.cs" />
+    <Compile Include="Interfaces\ICarActions.cs" />
+    <Compile Include="Interfaces\IMotobikeActions.cs" />
     <Compile Include="Models\AutoMobil.cs" />
     <Compile Include="Models\Boat.cs" />
     <Compile Include="Models\Cars.cs" />
@@ -53,8 +56,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
