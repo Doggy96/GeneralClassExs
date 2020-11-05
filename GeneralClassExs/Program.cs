@@ -13,7 +13,23 @@ namespace GeneralClassExs
 		{
 			Cars car = new Cars(true);
 			MotorBike motor = new MotorBike(true);
-			MotorBike motor1 = new MotorBike();
+			Boat boat = new Boat();
+
+			car.Steer();
+			car.SteerLeft();
+			car.SteerRight();
+			car.Reverse();
+
+			motor.Steer();
+			motor.SteerLeft();
+			motor.SteerRight();
+
+			boat.Steer();
+			boat.SteerLeft();
+			boat.SteerRight();
+			boat.Reverse();
+
+		
 
 			motor.Start();
 			Console.WriteLine(motor.IsOn);
@@ -30,6 +46,7 @@ namespace GeneralClassExs
 			Console.WriteLine(car.IsOn);
 
 			Console.ReadLine();
+
 		}
 
 

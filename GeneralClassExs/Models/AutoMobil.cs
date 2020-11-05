@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeneralClassExs.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,18 +7,22 @@ using System.Threading.Tasks;
 
 namespace GeneralClassExs.Models
 {
-	abstract class AutoMobil
+	class AutoMobil 
 	{
-		private bool _isOn;
-
-		//public Cars()
-		//{
-		//	//this._isOn = true;
-		//}
+		
+		private bool _isOn, _steering;
+		
 
 		public AutoMobil()
 		{
 			this._isOn = true;
+		}
+
+		public bool Steering
+		{
+
+			get { return _steering; }
+			set { _steering = value; }
 		}
 
 		public bool IsOn
@@ -36,9 +41,7 @@ namespace GeneralClassExs.Models
 			this.IsOn = false;
 		}
 
-		abstract public void SteerLeft();
-		//abstract public void SteerRight();
-		//abstract public void Steer(bool steerLeft);
+		
 
 	}
 }

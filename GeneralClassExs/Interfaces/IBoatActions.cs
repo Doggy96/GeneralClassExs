@@ -8,6 +8,9 @@ namespace GeneralClassExs.Interfaces
 {
 	interface IBoatActions
 	{
-
+		void Reverse();
+		void SteerRight();
+		void SteerLeft();
+		void Steer();
 	}
 }

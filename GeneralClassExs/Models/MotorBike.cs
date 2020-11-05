@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeneralClassExs.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GeneralClassExs.Models
 {
-	class MotorBike : AutoMobil
+	class MotorBike : AutoMobil, IAytomobileActions, IMotobikeActions
 	{
 		private bool _isOn;
 
@@ -20,7 +21,7 @@ namespace GeneralClassExs.Models
 			this._isOn = true;
 		}
 
-		public override void SteerLeft()
+		public void SteerLeft()
 		{
 			Console.WriteLine("The motorbike is steering left");
 		}
@@ -29,5 +30,16 @@ namespace GeneralClassExs.Models
 		{
 			Console.WriteLine("The motorbike is breaking");
 		}
+
+		public void SteerRight()
+		{
+			Console.WriteLine("The motorbike is turning right");
+		}
+
+		public void Steer()
+		{
+			Console.WriteLine("The motorbik is going straight");
+		}
+
 	}
 }

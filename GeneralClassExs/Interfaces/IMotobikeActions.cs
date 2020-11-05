@@ -8,6 +8,9 @@ namespace GeneralClassExs.Interfaces
 {
 	interface IMotobikeActions
 	{
-
+		void Break();
+		void SteerRight();
+		void SteerLeft();
+		void Steer();
 	}
 }

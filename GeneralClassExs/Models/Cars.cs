@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeneralClassExs.Interfaces;
+using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GeneralClassExs.Models
 {
-	class Cars : AutoMobil
+	class Cars : AutoMobil, IAytomobileActions, ICarActions
 	{
 		public Cars()
 		{
@@ -20,7 +21,7 @@ namespace GeneralClassExs.Models
 
 
 
-		public override void SteerLeft()
+		public void SteerLeft()
 		{
 			Console.WriteLine("The car is steering left");
 		}
@@ -28,6 +29,21 @@ namespace GeneralClassExs.Models
 		public void Break()
 		{
 			Console.WriteLine("The car is breaking");
+		}
+
+		public void Reverse()
+		{
+			Console.WriteLine("The car is reversing");
+		}
+
+		public void SteerRight()
+		{
+			Console.WriteLine("The car is turning right");
+		}
+
+		public void Steer()
+		{
+			Console.WriteLine("The car is going straight");
 		}
 	}
 }
