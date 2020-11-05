@@ -9,6 +9,7 @@ namespace GeneralClassExs.Models
 {
 	class Boat : AutoMobil, IAytomobileActions, IBoatActions
 	{
+		bool turnL, turnR;
 		public Boat()
 		{
 
@@ -33,6 +34,7 @@ namespace GeneralClassExs.Models
 		public void SteerRight(bool turnR)
 		{
 			Console.WriteLine("The boat is turning right");
+			
 
 		}
 
@@ -40,6 +42,18 @@ namespace GeneralClassExs.Models
 		{
 			Console.WriteLine("The boat is going straight");
 
+		}
+
+		public void directio(bool turnR, bool turnL)
+		{
+			if (turnR == true)
+			{
+				turnL = false;
+			}
+			else
+			{
+				turnL = true;
+			}
 		}
 	}
 }

@@ -11,7 +11,9 @@ namespace GeneralClassExs.Interfaces
 		void SteerLeft(bool turnL);
 		void SteerRight(bool turnR );
 		void Steer();
-		
+		void directio(bool turnR, bool turnL);
+
+
 
 
 	}

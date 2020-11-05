@@ -41,5 +41,17 @@ namespace GeneralClassExs.Models
 			Console.WriteLine("The motorbik is going straight");
 		}
 
+		public void directio(bool turnR, bool turnL)
+		{
+			if (turnR == true)
+			{
+				turnL = false;
+			}
+			else
+			{
+				turnL = true;
+			}
+		}
+
 	}
 }

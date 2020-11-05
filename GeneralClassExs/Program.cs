@@ -11,22 +11,26 @@ namespace GeneralClassExs
 	{
 		static void Main(string[] args)
 		{
+			
 			Cars car = new Cars(true);
 			MotorBike motor = new MotorBike(true);
 			Boat boat = new Boat();
 
 			car.Steer();
 			
-			car.SteerLeft(false);
+			car.SteerLeft(true);
 			car.SteerRight(false);
+			car.directio(true, false);
 			car.Reverse();
 
 			motor.Steer();
 			motor.SteerLeft(true);
+			motor.directio(true, true);
 			motor.SteerRight(false);
 
 			boat.Steer();
 			boat.SteerLeft(true);
+			boat.directio(false, true);
 			boat.SteerRight(false);
 			boat.Reverse();
 
