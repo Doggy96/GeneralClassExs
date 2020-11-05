@@ -12,7 +12,7 @@ namespace GeneralClassExs.Models
 
 		//public Cars()
 		//{
-		//	this._isOn = true;
+		//	//this._isOn = true;
 		//}
 
 		public AutoMobil()
@@ -39,8 +39,6 @@ namespace GeneralClassExs.Models
 		abstract public void SteerLeft();
 		//abstract public void SteerRight();
 		//abstract public void Steer(bool steerLeft);
-		//{
-		//	Console.WriteLine("The car is steering left");
-		//}
+
 	}
 }

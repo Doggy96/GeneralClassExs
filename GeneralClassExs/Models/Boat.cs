@@ -1,5 +1,4 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,27 +6,25 @@ using System.Threading.Tasks;
 
 namespace GeneralClassExs.Models
 {
-	class Cars : AutoMobil
+	class Boat : AutoMobil
 	{
-		public Cars()
+		public Boat()
 		{
 
 		}
-		public Cars(bool IsOn)
+		public Boat(bool IsOn)
 		{
 			this.IsOn = IsOn;
 		}
 
-
-
 		public override void SteerLeft()
 		{
-			Console.WriteLine("The car is steering left");
+			throw new NotImplementedException();
 		}
 
-		public void Break()
+		public void Reverse()
 		{
-			Console.WriteLine("The car is breaking");
+			Console.WriteLine("The boat is reversing");
 		}
 	}
 }
