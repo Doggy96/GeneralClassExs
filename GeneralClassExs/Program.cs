@@ -17,7 +17,6 @@ namespace GeneralClassExs
 			Boat boat = new Boat();
 
 			car.Steer();
-			
 			car.SteerLeft(true);
 			car.SteerRight(false);
 			car.directio(true, false);
